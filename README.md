@@ -1,11 +1,70 @@
+# 특허법인 청구서 개선 프로젝트 포트폴리오
 
-  # Interactive Portfolio Webpage
+## 프로젝트 개요
 
-  This is a code bundle for Interactive Portfolio Webpage. The original project is available at https://www.figma.com/design/Qn0R9BTbWdN3xf0gIb2dE0/Interactive-Portfolio-Webpage.
+이 웹사이트는 **특허법인 테헤란**의 청구서 개선 프로젝트를 소개하는 인터랙티브 포트폴리오입니다. 기존 청구서의 문제점을 분석하고, 고객 경험(CX) 향상을 위한 개선 방안을 시각적으로 보여줍니다.
 
-  ## Running the code
+## 프로젝트 목적
 
-  Run `npm i` to install the dependencies.
+### 1. 문제 인식
+기존 청구서의 주요 문제점:
+- 고객이 청구서에서 문의하려면 청구서를 이탈해야 하는 불편
+- 결제 링크가 연결되지 않아 계좌번호를 메모해야 하는 번거로움
 
-  Run `npm run dev` to start the development server.
-  
+### 2. 개선 방향
+고객 경험(CX) 향상을 위한 4가지 핵심 개선 포인트:
+- **브랜드 컬러 적용**: 특허법인 테헤란의 브랜드 컬러(BLUE) 톤을 활용한 디자인 개선
+- **mailto · tel: 기능**: 청구서 이탈 없이 바로 문의할 수 있는 기능 구현
+- **QR 결제 링크**: 고객 편의성 향상 및 이탈 방지를 위한 결제 링크 통합
+- **자동 계산 수식**: 비용 계산 자동화로 효율성 제고
+
+### 3. 개선 효과
+- CS 효율화: 상담 접수처 문의 고객 30% 감소
+- 업무 효율 향상: 청구서 수령부터 입금까지 평균 0.7일 감소
+- 고객 만족도 향상: 담당 부서 직접 연결 고객 13% 증가
+
+## 기술 스택
+
+- **React 18** + **TypeScript**
+- **Vite** - 빌드 도구
+- **Framer Motion** - 애니메이션
+- **Tailwind CSS** - 스타일링
+- **Radix UI** - UI 컴포넌트
+
+## 실행 방법
+
+### 의존성 설치
+```bash
+npm install
+```
+
+## 프로젝트 
+
+```
+src/
+├── app/
+│   ├── App.tsx              # 메인 앱 컴포넌트
+│   └── components/
+│       ├── Section1.tsx     # 인트로 (물방울 애니메이션)
+│       ├── Section2.tsx     # WHY? (기존 청구서의 단점)
+│       ├── Section3.tsx     # CX (고객 경험 개선 포인트)
+│       ├── Section4.tsx     # POINT (청구서 개선 포인트)
+│       ├── Section5.tsx     # IMPROVEMENTS (개선 효과)
+│       └── Section6.tsx     # 마무리
+└── styles/                   # 스타일 파일
+```
+
+## 주요 기능
+
+- **인터랙티브 스크롤 애니메이션**: 섹션별 스크롤 트리거 애니메이션
+- **반응형 디자인**: 모바일, 태블릿, 데스크톱 지원
+- **부드러운 전환 효과**: 물방울 효과와 페이드인 애니메이션
+- **섹션 네비게이션**: 우측 네비게이션 도트로 섹션 이동
+
+## 제작자
+
+**정성언**
+
+---
+
+이 프로젝트는 고객 경험 개선을 통한 비즈니스 성과 향상을 보여주는 포트폴리오입니다.
